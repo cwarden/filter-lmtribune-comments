@@ -1,0 +1,12 @@
+{
+	"manifest_version": 2,
+	"name": "Filter lmtribune.com Comments",
+	"version": "1.0",
+
+	"description": "Hide comments from non-constructive users on lmtribune.com",
+
+	"content_scripts": [{
+		"matches" : ["*://*.lmtribune.com/*"],
+		"js": ["filter.js"]
+	}]
+}
